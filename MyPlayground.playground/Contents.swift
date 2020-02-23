@@ -24,3 +24,11 @@ print("Random betű az abc-ből: \(alphabet.randomElement()!)")
 var password = alphabet.randomElement()! + alphabet.randomElement()! + alphabet.randomElement()! + alphabet.randomElement()!
 
 print(password)
+
+password = ""
+
+for _ in 1...8 {
+    password += alphabet.randomElement()!
+}
+
+print(password)
